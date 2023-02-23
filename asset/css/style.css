@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+/* speaker view */
+
+main {
+    background-color: rgb(16, 16, 16);
+    height: 100vh;
+}
+
+.speaker {
+   background-color: grey;
+   color: white;
+   margin: 5px 5px 0 0;
+   border-radius: 8px;
+   padding: 5px;
+   display: inline-block;
+   
+}
+
+.text-align {
+    text-align: right;
+}
+
+/* immagini */
+
+.contenitore-immagini {
+    width: 1800px;
+    padding-top: 30px;
+    margin: auto;
+}
+
+.griglia {
+    flex-wrap: wrap;
+}
+.griglia div {
+    margin: 5px;
+    flex-basis: calc(calc(100% / 7) - 10px);
+}
+
+.ciao {
+    width: 100%;
+    height: 150px;
+}
