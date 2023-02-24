@@ -8,16 +8,37 @@
     display: flex;
 }
 
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+    bottom:5px ;
+    left: 5px;
+}
+
+.background-color-grey {
+    background-color:rgb(82, 82, 82, 0.6);
+    width: 115px;
+    height: 30px;
+    left: 0;
+}
+
+.white {
+    color: white;
+}
+
 /* speaker view */
 
-main {
+body {
     background-color: rgb(16, 16, 16);
     height: 100vh;
+    width: 100vw;
 }
 
 .speaker {
    background-color: grey;
-   color: white;
    margin: 5px 5px 0 0;
    border-radius: 8px;
    padding: 5px;
@@ -40,12 +61,16 @@ main {
 .griglia {
     flex-wrap: wrap;
 }
-.griglia div {
+.griglia div:not(.background-color-grey) {
     margin: 5px;
     flex-basis: calc(calc(100% / 7) - 10px);
 }
 
-.ciao {
+.utente {
     width: 100%;
     height: 150px;
+}
+
+div.position-relative span {
+    margin: 0 0 0px 20px;
 }
